@@ -1,18 +1,21 @@
 * {
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   margin: 0;
   padding: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
 
 nav {
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   background-color: #fff;
   font-size: 15px; }
   nav .logo {
-    margin: 10px 0px 10px 30px;
+    margin: 5px 0px 0px 30px;
     font-size: 29px;
     font-weight: bold; }
+    nav .logo a {
+      color: #484848; }
     nav .logo img {
       vertical-align: text-top;
       width: 30px;
@@ -33,5 +36,262 @@ nav {
         color: #a1a1a1; }
     nav ul .active {
       border-bottom: 3px solid #e7504d; }
+
+.banner-wrap {
+  height: 700px;
+  width: 100%;
+  background-image: url("../img/banner.png");
+  background-size: cover; }
+  .banner-wrap .banner {
+    color: #fff;
+    padding-left: 110px;
+    padding-top: 210px; }
+    .banner-wrap .banner .title {
+      font-size: 60px; }
+    .banner-wrap .banner .subtitle {
+      margin-top: 3px;
+      padding-left: 10px;
+      font-size: 22px; }
+    .banner-wrap .banner button {
+      margin-left: 10px;
+      margin-top: 50px;
+      text-align: center;
+      font-size: 32px;
+      background-color: #e7504d;
+      color: #fff;
+      width: 340px;
+      height: 62px;
+      border: none; }
+
+.characters {
+  width: 100%;
+  height: 250px; }
+  .characters .character {
+    width: 25%;
+    padding: 50px 0px;
+    float: left;
+    text-align: center; }
+    .characters .character img {
+      margin-bottom: 30px; }
+    .characters .character p {
+      text-align: center;
+      color: #a1a1a1;
+      font-size: 15px;
+      padding-bottom: 1.5rem; }
+    .characters .character .with-separator {
+      border-right: 2px solid #a1a1a1; }
+
+.more {
+  background-color: #ececec;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px; }
+  .more img {
+    width: 90px;
+    height: 90px; }
+  .more p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #a1a1a1; }
+
+.searcher {
+  height: 250px;
+  padding-top: 80px;
+  background-image: url("../img/map.png");
+  background-size: cover;
+  color: #fff;
+  text-align: center; }
+  .searcher .container {
+    margin: 0 auto;
+    vertical-align: text-top; }
+  .searcher .title {
+    font-size: 23px; }
+  .searcher hr {
+    margin: 5px auto 20px auto;
+    width: 30px;
+    border-top: 1px solid #fff; }
+  .searcher .subtitle {
+    font-size: 14px;
+    margin-bottom: 30px; }
+  .searcher .box {
+    width: 200px;
+    height: 30px;
+    margin: 0 20px;
+    background-color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    box-sizing: border-box; }
+  .searcher .select {
+    text-align: left;
+    color: #a1a1a1;
+    padding-left: 10px;
+    padding-top: 3px;
+    background-image: url("../img/selector.png");
+    background-position: 95%;
+    background-repeat: no-repeat; }
+    .searcher .select img {
+      float: right; }
+    .searcher .select span {
+      line-height: 18px;
+      font-size: 12px;
+      vertical-align: text-top; }
+  .searcher .dropdown {
+    border: 1px solid #e7504d;
+    position: relative;
+    height: 32px; }
+    .searcher .dropdown ul {
+      box-sizing: border-box;
+      width: 200px;
+      position: absolute;
+      top: 30px;
+      left: -1px;
+      background-color: #e3e3e3;
+      border: 1px solid #e7504d;
+      list-style: none; }
+      .searcher .dropdown ul li {
+        color: #909090;
+        padding-left: 30px; }
+      .searcher .dropdown ul .actived {
+        background-color: #e7504d;
+        color: #fff;
+        background-image: url("../img/active.png");
+        background-repeat: no-repeat;
+        background-position: 5px; }
+  .searcher button {
+    background-color: #e7504d !important;
+    color: #fff;
+    border: none; }
+
+.exhibits-wrap {
+  width: 100%;
+  height: 460px;
+  padding-top: 100px;
+  background-color: #f7f7f7; }
+  .exhibits-wrap .exhibits {
+    width: 1000px;
+    margin: 0 auto; }
+    .exhibits-wrap .exhibits .item {
+      margin: 0 22px;
+      color: #484848;
+      width: 200px;
+      text-align: center;
+      display: inline-block; }
+      .exhibits-wrap .exhibits .item img {
+        width: 200px; }
+      .exhibits-wrap .exhibits .item .title {
+        font-size: 16px; }
+      .exhibits-wrap .exhibits .item .bigtitle {
+        font-size: 20px;
+        word-spacing: 30px; }
+      .exhibits-wrap .exhibits .item .subtitle {
+        color: #a1a1a1;
+        font-size: 12px;
+        margin-top: 5px; }
+
+.magazine {
+  width: 100%;
+  max-width: 1280px;
+  text-align: center; }
+  .magazine .item1-1 {
+    box-sizing: border-box;
+    float: left;
+    width: 66.6%;
+    height: 550px;
+    background-image: url("../img/carousel_1.png");
+    background-size: cover;
+    color: #fff;
+    padding-top: 110px; }
+    .magazine .item1-1 .new-world {
+      font-size: 50px; }
+    .magazine .item1-1 .time {
+      font-size: 180px;
+      font-family: "Tahoma", serif;
+      line-height: 130px;
+      margin-bottom: 40px; }
+    .magazine .item1-1 .subtitle {
+      font-size: 24px; }
+  .magazine .item1-2 {
+    float: left;
+    width: 33.4%;
+    height: 550px;
+    position: relative; }
+    .magazine .item1-2 .title {
+      font-size: 23px;
+      margin-top: 150px;
+      margin-bottom: 20px; }
+    .magazine .item1-2 .title-red {
+      color: #e7504d; }
+    .magazine .item1-2 .content {
+      text-align: left;
+      color: #a1a1a1;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 30px;
+      font-family: serif;
+      margin-bottom: 40px; }
+    .magazine .item1-2 button {
+      background-color: transparent;
+      border: 1px solid #e7504d;
+      color: #e7504d;
+      width: 120px;
+      height: 40px;
+      font-size: 15px; }
+    .magazine .item1-2 .page {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 20px 6px;
+      border: 1px solid #a1a1a1;
+      border-radius: 6px; }
+    .magazine .item1-2 .current {
+      width: 0px;
+      height: 0px;
+      border: 6px solid #a1a1a1; }
+    .magazine .item1-2 .arrow {
+      position: absolute;
+      top: 260px;
+      left: -40px;
+      border: 20px solid transparent;
+      border-right-color: #fff; }
+  .magazine .item2-1 {
+    float: left;
+    width: 33.3%;
+    color: #484848;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 175px 0; }
+    .magazine .item2-1 hr {
+      width: 32px;
+      border-top: 2px solid #a1a1a1;
+      margin: 25px auto; }
+    .magazine .item2-1 button {
+      color: #e7504d;
+      font-size: 20px;
+      border: 1px solid #e7504d;
+      background-color: transparent;
+      width: 180px;
+      height: 40px; }
+  .magazine .red {
+    background-color: #e7504d;
+    color: #fff; }
+    .magazine .red hr {
+      border-color: #fff; }
+    .magazine .red button {
+      color: #fff;
+      border-color: #fff; }
+  .magazine .item2-3 {
+    float: left;
+    width: 33.4%;
+    height: 503px;
+    background-image: url("../img/time2.jpg");
+    background-size: cover;
+    position: relative; }
+    .magazine .item2-3 .arrow {
+      position: absolute;
+      top: 251px;
+      border: 20px solid transparent;
+      border-left-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,21 +1,25 @@
 $red: #e7504d
 $gray: #a1a1a1
+$logo-black: #484848
 
 *
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei" , sans-serif
   margin: 0
   padding: 0
 
 a
   text-decoration: none
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei" , sans-serif
 
 nav
-  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
   background-color: #fff
   font-size: 15px
   .logo
-    margin: 10px 0px 10px 30px
+    margin: 5px 0px 0px 30px
     font-size: 29px
     font-weight: bold
+    a
+      color: $logo-black
     img
       vertical-align: text-top
       width: 30px
@@ -37,43 +41,268 @@ nav
     .active
       border-bottom: 3px solid $red
 
-// .banner
-//   background:
-//   .title
-//   .subtitle
-//   button
-//
-// .characters
-//   .character
-//     img
-//       text-align: center
-//     p
-//       font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
-//       text-align: center
-//
-// .more
-//   background-color: gray
-//   img
-//   p
-//
-// .searcher
-//   background:
-//   .title
-//   .subtitle
-//   select
-//   button
-//
-// .exhibits
-//   .words-above
-//   .words-under
-//
-// .magazine1
-//   .left
-//   .right
-// .magazine2
-//   .left
-//   .middle
-//   .right
+.banner-wrap
+  height: 700px
+  width: 100%
+  background-image: url('../img/banner.png')
+  background-size: cover
+  .banner
+    color: #fff
+    padding-left: 110px
+    padding-top: 210px
+    .title
+      font-size: 60px
+    .subtitle
+      margin-top: 3px
+      padding-left: 10px
+      font-size: 22px
+    button
+      margin-left: 10px
+      margin-top: 50px
+      text-align: center
+      font-size: 32px
+      background-color: $red
+      color: #fff
+      width: 340px
+      height: 62px
+      border: none
+
+.characters
+  width: 100%
+  height: 250px
+  .character
+    width: 25%
+    padding: 50px 0px
+    float: left
+    text-align: center
+    img
+      margin-bottom: 30px
+    p
+      text-align: center
+      color: $gray
+      font-size: 15px
+      padding-bottom: 1.5rem
+    .with-separator
+      border-right: 2px solid $gray
+
+.more
+  background-color: #ececec
+  text-align: center
+  padding-top: 100px
+  padding-bottom: 30px
+  img
+    width: 90px
+    height: 90px
+  p
+    margin-top: 30px
+    margin-bottom: 30px
+    font-size: 50px
+    color: $gray
+
+.searcher
+  height: 250px
+  padding-top: 80px
+  background-image: url('../img/map.png')
+  background-size: cover
+  color: #fff
+  text-align: center
+  .container
+    margin: 0 auto
+    vertical-align: text-top
+  .title
+    font-size: 23px
+  hr
+    margin: 5px auto 20px auto
+    width: 30px
+    border-top: 1px solid #fff
+  .subtitle
+    font-size: 14px
+    margin-bottom: 30px
+  .box
+    width: 200px
+    height: 30px
+    margin: 0 20px
+    background-color: #fff
+    display: inline-block
+    font-size: 15px
+    box-sizing: border-box
+  .select
+    text-align: left
+    color: $gray
+    padding-left: 10px
+    padding-top: 3px
+    background-image: url('../img/selector.png')
+    background-position: 95%
+    background-repeat: no-repeat
+    img
+      float: right
+    span
+      line-height: 18px
+      font-size: 12px
+      vertical-align: text-top
+  .dropdown
+    border: 1px solid $red
+    position: relative
+    height: 32px
+    ul
+      box-sizing: border-box
+      width: 200px
+      position: absolute
+      top: 30px
+      left: -1px
+      background-color: #e3e3e3
+      border: 1px solid $red
+      list-style: none
+      li
+        color: #909090
+        padding-left: 30px
+      .actived
+        background-color: $red
+        color: #fff
+        background-image: url('../img/active.png')
+        background-repeat: no-repeat
+        background-position: 5px
+  button
+    background-color: $red !important
+    color: #fff
+    border: none
+
+.exhibits-wrap
+  width: 100%
+  height: 460px
+  padding-top: 100px
+  background-color: #f7f7f7
+  .exhibits
+    width: 1000px
+    margin: 0 auto
+    .item
+      margin: 0 22px
+      color: $logo-black
+      width: 200px
+      text-align: center
+      display: inline-block
+      img
+        width: 200px
+      .title
+        font-size: 16px
+      .bigtitle
+        font-size: 20px
+        word-spacing: 30px
+      .subtitle
+        color: $gray
+        font-size: 12px
+        margin-top: 5px
+
+.magazine
+  width: 100%
+  max-width: 1280px
+  text-align: center
+  .item1-1
+    box-sizing: border-box
+    float: left
+    width: 66.6%
+    height: 550px
+    background-image: url('../img/carousel_1.png')
+    background-size: cover
+    color: #fff
+    padding-top: 110px
+    .new-world
+      font-size: 50px
+    .time
+      font-size: 180px
+      font-family: 'Tahoma', serif
+      line-height: 130px
+      margin-bottom: 40px
+    .subtitle
+      font-size: 24px
+  .item1-2
+    float: left
+    width: 33.4%
+    height: 550px
+    .title
+      font-size: 23px
+      margin-top: 150px
+      margin-bottom: 20px
+    .title-red
+      color: $red
+    .content
+      text-align: left
+      color: $gray
+      width: 70%
+      margin: 0 auto
+      font-size: 14px
+      line-height: 30px
+      font-family: serif
+      margin-bottom: 40px
+    button
+      background-color: transparent
+      border: 1px solid $red
+      color: $red
+      width: 120px
+      height: 40px
+      font-size: 15px
+    .page
+      display: inline-block
+      width: 10px
+      height: 10px
+      margin: 20px 6px
+      border: 1px solid $gray
+      border-radius: 6px
+    .current
+      width: 0px
+      height: 0px
+      border: 6px solid $gray
+    position: relative
+    .arrow
+      position: absolute
+      top: 260px
+      left: -40px
+      border: 20px solid transparent
+      border-right-color: #fff
+  .item2-1
+    float: left
+    width: 33.3%
+    color: $logo-black
+    font-size: 20px
+    box-sizing: border-box
+    padding: 175px 0
+    hr
+      width: 32px
+      border-top: 2px solid $gray
+      margin: 25px auto
+    button
+      color: $red
+      font-size: 20px
+      border: 1px solid $red
+      background-color: transparent
+      width: 180px
+      height: 40px
+  .red
+    background-color: $red
+    color: #fff
+    hr
+      border-color: #fff
+    button
+      color: #fff
+      border-color: #fff
+  .item2-3
+    float: left
+    width: 33.4%
+    height: 503px
+    background-image: url('../img/time2.jpg')
+    background-size: cover
+    position: relative
+    .arrow
+      position: absolute
+      top: 251px
+      // right: 40px
+      border: 20px solid transparent
+      border-left-color: #fff
+
+.magazine2
+  .left
+  .middle
+  .right
 //
 // .volunteer
 //   .title

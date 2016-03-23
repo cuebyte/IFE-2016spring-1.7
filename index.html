@@ -18,38 +18,42 @@
         <li><a href="#">关于我们</a></li>
       </ul>
       <div class="logo">
-        <img src="img/logo.png" />
-        <span>新世界</span>
+        <a href="#">
+          <img src="img/logo.png" />
+          <span>新世界</span>
+        </a>
       </div>
     </nav>
-    <!-- <div class="banner">
-      <p class="title">
-        Time of new life
-      </p>
-      <p class="subtitle">
-        新时代，年轻的人们让我们一起<br>
-        体验新生活，享受新生活
-      </p>
-      <button type="button" name="start">开始体验</button>
+    <div class="banner-wrap">
+      <div class="banner">
+        <p class="title">
+          Time of new life
+        </p>
+        <p class="subtitle">
+          新时代，年轻的人们让我们一起<br>
+          体验新生活，享受新生活
+        </p>
+        <button type="button" name="start">开始体验</button>
+      </div>
     </div>
     <div class="characters">
       <div class="character">
         <img src="img/icon_1.png" />
-        <p>
+        <p class="with-separator">
           打造全新世界观，让你更<br>
           爱你的生活
         </p>
       </div>
       <div class="character">
         <img src="img/icon_2.png" />
-        <p>
+        <p class="with-separator">
           丰富多彩的公益活动，发<br>
           挥新世界的主人公意识
         </p>
       </div>
       <div class="character">
         <img src="img/icon_3.png" />
-        <p>
+        <p class="with-separator">
           时尚的新理念，超前体验<br>
           未知的生活
         </p>
@@ -65,22 +69,96 @@
     <div class="more">
       <img src="img/logo.png" />
       <p>
-        关于新世界,你不知道的还有什么?
+        关于新世界，你不知道的还有什么?
       </p>
     </div>
     <div class="searcher">
-      <p class="title">查找新世界城市活动信息</p>
-      <select name="nation">
-        <option value="china">china</option>
-      </select>
-      <select name="province">
-        <option value="option">option</option>
-      </select>
-      <select class="" name="city">
-        <option value="option">option</option>
-      </select>
-      <button type="button" name="search">搜&nbsp;&nbsp;&nbsp;&nbsp;索</button>
+      <div class="title">查找新世界城市活动信息</div>
+      <hr>
+      <div class="subtitle">每个城市都有不同的活动信息，请自主查询您所需要了解的城市</div>
+      <form class="container" action="index.html" method="post">
+        <div class="box select">
+          <span>中国</span>
+        </div>
+        <div class="box select dropdown">
+          <span>省份</span>
+          <ul>
+            <li class="actived">北京市</li>
+            <li>天津市</li>
+            <li>河北省</li>
+            <li>陕西省</li>
+            <li>内蒙古自治区</li>
+            <li>辽宁省</li>
+          </ul>
+        </div>
+        <div class="box select">
+          <span>城市</span>
+        </div>
+        <button class="box" type="button" name="search">搜&nbsp;&nbsp;&nbsp;&nbsp;索</button>
+      </form>
     </div>
-     -->
+    <div class="exhibits-wrap">
+      <div class="exhibits">
+        <div class="item">
+          <img src="img/activity_1.png" />
+          <p class="title">北京活动</p>
+          <p class="subtitle">新社区大联盟</p>
+        </div>
+        <div class="item">
+          <p class="bigtitle">上 海 活 动</p>
+          <p class="subtitle">夜上海新景观探索</p>
+          <img src="img/activity_2.png" />
+        </div>
+        <div class="item">
+          <img src="img/activity_3.jpg" />
+          <p class="title">深圳活动</p>
+          <p class="subtitle">全新海岸线观点站</p>
+        </div>
+        <div class="item">
+          <img src="img/activity_4.png" />
+          <p class="title">香港活动</p>
+          <p class="subtitle">奢侈消费大派送</p>
+        </div>
+      </div>
+    </div>
+    <div class="magazine">
+      <div class="item1-1">
+        <p class="new-world">新世界</p>
+        <p class="time">TIME</p>
+        <p class="subtitle">@新世界 － 北京<br>
+          2016.04.01</p>
+      </div>
+      <div class="item1-2">
+        <p class="title">新世界／<span class="title-red">01</span></p>
+        <p class="content">
+          喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵
+        </p>
+        <button type="button" name="button">更多详情</button>
+        <br>
+        <span class="page current"></span>
+        <span class="page"></span>
+        <span class="page"></span>
+        <div class="arrow"></div>
+      </div>
+    </div>
+    <div class="magazine">
+      <div class="item2-1 red">
+        <p class="title">
+          新时代<br>关于爱生活的我们
+        </p>
+        <hr>
+        <button type="button" name="button">查看更多</button>
+      </div>
+      <div class="item2-1">
+        <p class="title">
+          新时代<br>关于爱生活的我们
+        </p>
+        <hr>
+        <button type="button" name="button">查看更多</button>
+      </div>
+      <div class="item2-3">
+        <div class="arrow"></div>
+      </div>
+    </div>
   </body>
 </html>
